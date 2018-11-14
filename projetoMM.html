@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<title>Thais Torres</title>
 
@@ -14,8 +13,9 @@
 
 	<link href="estilo.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
-</head>
 
+	<script src="script.js"></script> 
+</head>
 <body>
 
 	<header>
@@ -26,63 +26,29 @@
 		</div>
 	</header>
 
+
 	<div class="content">
-		<aside>
-			<p>Thais Torres</p>
-			<p>thaeren7@gmail.com</p>
-			<p>85 9 8551 8823</p>
-		</aside>
-		<div class="section">
-			<form>
-				<div class="input">
-					<input type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Nome</label>
-				</div>
-
-				<div class="input">
-					<input type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Sobrenome</label>
-				</div>
-
-				<div class="input">
-					<input type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Email</label>
-				</div>
-
-				<div class="input">
-					<input type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Telefone</label>
-				</div>
-
-				<div class="input">
-					<input type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Mensagem</label>
-				</div>
-				<div class="button-container">
-					<button type="button">Enviar</button>
-				</div>
-			</form>
+		<div class="about">
+			<img id="imgModal" src="imgprojetos/mminterioresalt.png" alt="Logo MM Interiores"  onclick="openImage(src, alt)">
+			<p>MM Interiores é o escritório de design de interiores de Marília Mendes</p><br>
+			<p>
+				Neste projeto foi desenvolvida a logo e a papelaria. Veja mais detalhes no 
+				<a href="https://www.behance.net/gallery/71099419/MM-Interiores" target="_blank">Behance</a>
+			</p>
+		</div>
+		<div id="myModal">
+			<span class="close"   onclick="closeImage()">&times;</span>
+			<img class="modal-content" id="imgprojeto" src="imgprojetos/mminterioresalt.png" alt="Logo MM Interiores">
 		</div>
 	</div>
-
+	
 
 	<footer>
 		<nav>
-			<a href="index.html">Início</a>
 			<a href="portfolio.html">Portfólio</a>
 			<a href="sobre.html">Sobre</a>
+			<a href="contato.html">Contato</a>
 		</nav>
 	</footer>
 </body>
-
 </html>
